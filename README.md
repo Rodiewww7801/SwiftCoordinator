@@ -13,7 +13,7 @@ Used UINavigationStack to manage navigation with converted SwiftUI views to UIHo
 
 
 ## Why this code exsist?
-[StackOverlow problem](https://stackoverflow.com/questions/61304700/swiftui-how-to-avoid-navigation-hardcoded-into-the-view) You can check how many problems would you has have with big application using Apple tools for SwiftUI navigations. Even using new SwiftUI `NavigationStack` you steal need use coordinator to reuse view with navigation logic + your code will has ugly generics.
+[StackOverlow problem](https://stackoverflow.com/questions/61304700/swiftui-how-to-avoid-navigation-hardcoded-into-the-view) You can check how many problems would you has have with big application using Apple tools for SwiftUI navigations. Even using new SwiftUI `NavigationStack` you still need to use a coordinator to reuse view with the navigation logic + your code will have ugly generics.
 
 I provide my approach of implementaion the pattern Сoordinator without "extra pattern solutions". Doesn't have complex logic. I use it in my iOS projects.
 

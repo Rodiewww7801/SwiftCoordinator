@@ -1,5 +1,6 @@
 # SwiftCoordinator
-  This is a Swift package with a implementation of the "Coordinator desing pattern". One Coordinator for both frameworks SwiftUI and UIKit.
+
+[...Stil in progress...] This is a Swift package with a implementation of the "Coordinator desing pattern". One Coordinator for both frameworks SwiftUI and UIKit.
 Used UINavigationStack to manage navigation with converted SwiftUI views to UIHostingController. 
 
 ## Content

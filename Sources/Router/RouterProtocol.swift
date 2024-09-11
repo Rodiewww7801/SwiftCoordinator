@@ -1,6 +1,6 @@
 //
 //  RouterProtocol.swift
-//  
+//
 //
 //  Created by Rodion Hladchenko on 10.09.2024.
 //
@@ -9,6 +9,7 @@ import UIKit
 
 public typealias Presentable = UIViewController & RouteProvider
 
+/// `Router` encapsulate specific navigation logic.
 public protocol RouterProtocol {
     var navigationController: UINavigationController { get }
 
@@ -20,7 +21,7 @@ public protocol RouterProtocol {
     func popTo(_ module: Presentable, animated: Bool)
 }
 
-extension RouterProtocol {
+public extension RouterProtocol {
     func push(_ module: Presentable, animated: Bool) {
         navigationController.pushViewController(module, animated: animated)
     }

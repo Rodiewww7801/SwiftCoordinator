@@ -23,4 +23,6 @@ public class NavigationControllerFactory: NavigationControllerFactoryProtocol {
         let navigationController = self.makeNavigationController(deleagte: delegate)
         return navigationController
     }
+    
+    public init(){}
 }

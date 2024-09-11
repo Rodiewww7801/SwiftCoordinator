@@ -1,12 +1,14 @@
 //
 //  Coordinator.swift
-//  
+//
 //
 //  Created by Rodion Hladchenko on 10.09.2024.
 //
 
 import UIKit
 
+///  `Coordinator`  is responsible for controlling the navigation flow of the application.
+///   It manages which view controllers should be presented or pushed and manage life cycle of other child coordinators
 public protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     func start()
@@ -16,13 +18,7 @@ public protocol Coordinator: AnyObject {
     func remove()
 }
 
-extension Coordinator {
-    func start(for route: [NavigationRoute]) {
-        fatalError("[Coordinator]: Not implemented")
-    }
-}
-
-extension Coordinator {
+public extension Coordinator {
     func add(child: Coordinator) {
         guard !childCoordinators.contains(where: { $0 === child }) else { return }
         childCoordinators.append(child)
@@ -42,4 +38,6 @@ extension Coordinator {
         }
         childCoordinators.removeAll()
     }
+    
+    func start(for route: [NavigationRoute]) { }
 }

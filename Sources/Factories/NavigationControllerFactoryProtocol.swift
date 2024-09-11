@@ -1,6 +1,6 @@
 //
 //  NavigationControllerFactoryProtocol.swift
-//  
+//
 //
 //  Created by Rodion Hladchenko on 10.09.2024.
 //

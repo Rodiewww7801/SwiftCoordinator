@@ -1,13 +1,13 @@
 //
 //  NavigationControllerDelegate.swift
-//  
+//
 //
 //  Created by Rodion Hladchenko on 10.09.2024.
 //
 
 import UIKit
 
-class NavigationControllerTransitionHandler {
+internal class NavigationControllerTransitionHandler {
     func navigationController(
         _ navigationController: UINavigationController,
         animationControllerFor operation: UINavigationController.Operation,
@@ -24,10 +24,10 @@ class NavigationControllerTransitionHandler {
         }
 }
 
-class NavigationControllerDelegateProxy: NSObject, UINavigationControllerDelegate {
-    public let transitionHandler: NavigationControllerTransitionHandler
+internal class NavigationControllerDelegateProxy: NSObject, UINavigationControllerDelegate {
+    let transitionHandler: NavigationControllerTransitionHandler
     
-    public init(transitionHandler: NavigationControllerTransitionHandler) {
+    init(transitionHandler: NavigationControllerTransitionHandler) {
         self.transitionHandler = transitionHandler
     }
     

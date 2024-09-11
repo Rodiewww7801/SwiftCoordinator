@@ -1,12 +1,14 @@
 //
 //  NavigationController.swift
-//  
+//
 //
 //  Created by Rodion Hladchenko on 10.09.2024.
 //
 
 import UIKit
 
+///  Custom `NavigationController` hides transition logic which animation is need for ViewController
+///  using its own delegate that handle selected type of animation implemented in `NavigationRoute`.
 public class NavigationController: UINavigationController {
     private var hardReferenceToDelegate: UINavigationControllerDelegate?
     

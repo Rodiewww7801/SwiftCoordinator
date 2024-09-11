@@ -8,11 +8,10 @@
 import Foundation
 import UIKit
 
-class Router: RouterProtocol {
+public class Router: RouterProtocol {
+    public var navigationController: UINavigationController
     
-    var navigationController: UINavigationController
-    
-    init(_ navigationController: UINavigationController) {
+    public init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
 }

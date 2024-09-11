@@ -126,6 +126,7 @@ enum CustomShapesRoute: NavigationRoute {
 2. Create your view factory implementing `RouteViewFactoryProtocol`.
 ```
 class CustomShapesViewFactory: RouteViewFactoryProtocol {
+    @ViewBuilder
     func view(for route: CustomShapesRoute) -> some View {
         switch route {
         case .triangle:

@@ -5,9 +5,9 @@ Used UINavigationStack to manage navigation with converted SwiftUI views to UIHo
 ## Content
 1. [**What is Coordinator?**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#what-is-coordinator)
 2. [**UML Diagram**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#uml-diagram)
-3. [**Why this code exist?**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#why-this-code-esist)
+3. [**Why this code exist?**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#why-this-code-exsist)
 4. [**Example of usage**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#example-of-usage)
-5. [**Installation**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#installation)
+5. [**Installation**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#instalation)
 
 ## What is Coordinator?
 

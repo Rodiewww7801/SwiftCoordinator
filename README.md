@@ -42,10 +42,6 @@ I provide my approach of implementaion the pattern Сoordinator without "extra p
   - Its doesn't support both SwiftUI and UIKit.
   - I like Route idea and NavigationController transition handler.
 
-**Q: It would be grate to see same for AppKit.**
-
-**A:** If I will do AppKit app i do.
-
 ## What is Coordinator?
 
 **Coordinator**: The Coordinator is responsible for controlling the navigation flow of the application. It manages which view controllers should be presented or pushed.

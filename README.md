@@ -1,28 +1,20 @@
 # SwiftCoordinator
-This is a Swift package with a implementation of the "Coordinator desing pattern". One Coordinator for both frameworks SwiftUI and UIKit.
+  This is a Swift package with a implementation of the "Coordinator desing pattern". One Coordinator for both frameworks SwiftUI and UIKit.
 Used UINavigationStack to manage navigation with converted SwiftUI views to UIHostingController. 
 
 ## Content
-1. [**What is Coordinator?**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#what-is-coordinator)
-2. [**UML Diagram**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#uml-diagram)
-3. [**Why this code exist?**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#why-this-code-exsist)
+1. [**Why this code exist?**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#why-this-code-exsist)
+2. [**What is Coordinator?**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#what-is-coordinator)
+3. [**UML Diagram**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#uml-diagram)
 4. [**Example of usage**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#example-of-usage)
 5. [**Installation**](https://github.com/Rodiewww7801/SwiftCoordinator?tab=readme-ov-file#instalation)
 
-## What is Coordinator?
 
-**Coordinator**: The Coordinator is responsible for controlling the navigation flow of the application. It manages which view controllers should be presented or pushed.
-
-**Router**: The Router handles the details of navigation—such as pushing or presenting view controllers. The Router's job is to encapsulate navigation logic.
-
-**Route**: The route helps coordinator to devide views on types that coordinator can navigate and set the transition between different types.
-
-## UML Diagram 
-
-![UMLDiagram drawio](https://github.com/user-attachments/assets/6803cd80-2d1c-4edd-86db-a5a52921014a)
 
 ## Why this code exsist?
-This is my approach of implementaion the pattern Сoordinator without "extra pattern solutions". Doesn't have complex logic. I use it in my iOS projects.
+[StackOverlow problem](https://stackoverflow.com/questions/61304700/swiftui-how-to-avoid-navigation-hardcoded-into-the-view) You can check how many problems would you has have with big application using Apple tools for SwiftUI navigations. Even using new SwiftUI `NavigationStack` you steal need use coordinator to reuse view with navigation logic + your code will has ugly generics.
+
+I provide my approach of implementaion the pattern Сoordinator without "extra pattern solutions". Doesn't have complex logic. I use it in my iOS projects.
 
 **Q: Who told you that we need Coordinator in SwiftUI?**
 
@@ -52,6 +44,18 @@ This is my approach of implementaion the pattern Сoordinator without "extra pat
 **Q: It would be grate to see same for AppKit.**
 
 **A:** If I will do AppKit app i do.
+
+## What is Coordinator?
+
+**Coordinator**: The Coordinator is responsible for controlling the navigation flow of the application. It manages which view controllers should be presented or pushed.
+
+**Router**: The Router handles the details of navigation—such as pushing or presenting view controllers. The Router's job is to encapsulate navigation logic.
+
+**Route**: The route helps coordinator to devide views on types that coordinator can navigate and set the transition between different types.
+
+## UML Diagram 
+
+![UMLDiagram drawio](https://github.com/user-attachments/assets/6803cd80-2d1c-4edd-86db-a5a52921014a)
 
 
 ## Example of usage

@@ -58,7 +58,7 @@ I provide my approach of implementaion the pattern Сoordinator without "extra p
 ## Example of usage
 ### Setup if you created SwiftUI app.
 1. Set ``@UIApplicationDelegateAdaptor`` for delegate UIKit UIApplicationDelegate in a SwiftUI app. It creates an instance of `AppDelegate`.
-```
+```swift
 @main
 struct SwiftCoordinatorApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
@@ -69,7 +69,7 @@ struct SwiftCoordinatorApp: App {
 }
 ```
 2. Inside `AppDelegate` sets `SceneDelegate` as the delegate class for the scene, ensuring that `SceneDelegate` will manage the lifecycle and UI setup for this scene.
-```
+```swift
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(
         _ application: UIApplication,
@@ -83,7 +83,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 ```
 3. Inside `SceneDelegate` retrieves the window from the UIWindowScene object. Uses a factory object to create a `UINavigationController` instance. This is where the app's navigation stack starts.
-```
+```swift
 final class SceneDelegate: NSObject, UIWindowSceneDelegate {
     func scene(
         _ scene: UIScene,
@@ -109,7 +109,7 @@ yourCoordinator.window.makeKeyAndVisible()
 ### Example of usage
 
 1. Create your `NavigationRoute` to enum views. If you want you can set transition for each route in `transitionType` property. 
-```
+```swift
 enum CustomShapesRoute: NavigationRoute {
     case triangle
     case star
@@ -121,7 +121,7 @@ enum CustomShapesRoute: NavigationRoute {
 }
 ```
 2. Create your view factory implementing `RouteViewFactoryProtocol`.
-```
+```swift
 class CustomShapesViewFactory: RouteViewFactoryProtocol {
     @ViewBuilder
     func view(for route: CustomShapesRoute) -> some View {
@@ -135,7 +135,7 @@ class CustomShapesViewFactory: RouteViewFactoryProtocol {
 }
 ```
 3. Create your ``Coordinator`` and set `router` property.
-```
+```swift
 class CustomShapeCoordinator: Coordinator {
     private var router: RouterProtocol
     private var factory = CustomShapesViewFactory()
